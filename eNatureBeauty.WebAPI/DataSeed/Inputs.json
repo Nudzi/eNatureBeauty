@@ -1,0 +1,156 @@
+[
+  {
+    "Id": 1,
+    "InvoiceNumber": "1",
+    "Date": "2020-11-11T00:00:00",
+    "InvoiceAmount": 120.00,
+    "PDV": 17.00,
+    "Note": null,
+    "StorageID": 1,
+    "UserID": 4,
+    "InvoiceAmountWithPDV": 101.00
+  },
+  {
+    "Id": 2,
+    "InvoiceNumber": "2",
+    "Date": "2020-11-11T00:00:00",
+    "InvoiceAmount": 129.00,
+    "PDV": 17.00,
+    "Note": null,
+    "StorageID": 1,
+    "UserID": 4,
+    "InvoiceAmountWithPDV": 120.00
+  },
+  {
+    "Id": 3,
+    "InvoiceNumber": "1up!IVVY3BRn-bKK-fI",
+    "Date": "2021-01-30T02:28:57.917",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  },
+  {
+    "Id": 4,
+    "InvoiceNumber": "*EVlY&LQ8R*iEulAKy*",
+    "Date": "2021-01-30T02:31:52.973",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  },
+  {
+    "Id": 5,
+    "InvoiceNumber": "ml3WALRB39Ri)LO8ADK",
+    "Date": "2021-01-30T02:36:52.063",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  },
+  {
+    "Id": 6,
+    "InvoiceNumber": "@U*@dF(tDRinORXPMv1",
+    "Date": "2021-01-31T17:25:36.680",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "Nista bitno",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  },
+  {
+    "Id": 7,
+    "InvoiceNumber": "AiHTvG5A$=%WoZ1I65H",
+    "Date": "2021-01-31T23:43:03.343",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  },
+  {
+    "Id": 8,
+    "InvoiceNumber": "XRz2Zgo\/ZSH&BknaV\/%",
+    "Date": "2021-02-01T00:19:51.533",
+    "InvoiceAmount": 20.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 18.00
+  },
+  {
+    "Id": 9,
+    "InvoiceNumber": "&(7o4mgNua5qvMR5dy6",
+    "Date": "2021-02-01T00:45:48.577",
+    "InvoiceAmount": 15.00,
+    "PDV": 18.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 12.30
+  },
+  {
+    "Id": 10,
+    "InvoiceNumber": ")@*VRRaA*f)LIka@Br8",
+    "Date": "2021-02-01T00:50:43.603",
+    "InvoiceAmount": 48.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 39.84
+  },
+  {
+    "Id": 11,
+    "InvoiceNumber": "#CF86^m8)NCu*y@59o4",
+    "Date": "2021-02-05T23:12:10.627",
+    "InvoiceAmount": 120.00,
+    "PDV": 17.00,
+    "Note": "Najnovija",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 99.60
+  },
+  {
+    "Id": 12,
+    "InvoiceNumber": "CdA3gwV6Vz2ROF8De9a",
+    "Date": "2021-02-06T21:51:19.780",
+    "InvoiceAmount": 50.00,
+    "PDV": 17.00,
+    "Note": "Novi prozivodi",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 41.50
+  },
+  {
+    "Id": 13,
+    "InvoiceNumber": "1Id@W%LTBsiaNiO0nfl",
+    "Date": "2021-02-06T23:50:13.567",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  },
+  {
+    "Id": 14,
+    "InvoiceNumber": "7LwI$0WKnBG^c335AoM",
+    "Date": "2021-02-06T23:50:31.823",
+    "InvoiceAmount": 0.00,
+    "PDV": 17.00,
+    "Note": "",
+    "StorageID": 1,
+    "UserID": 12,
+    "InvoiceAmountWithPDV": 0.00
+  }
+]

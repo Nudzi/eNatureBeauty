@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Country": "Bosnia",
+    "City": "Konjic",
+    "AddressName": "Titova br 4"
+  },
+  {
+    "Id": 2,
+    "Country": "Bosnia",
+    "City": "Sarajevo",
+    "AddressName": "Titova br 4"
+  },
+  {
+    "Id": 3,
+    "Country": "Bosnia",
+    "City": "Mostar",
+    "AddressName": "Bulevar 12"
+  },
+  {
+    "Id": 4,
+    "Country": "Bosnia and Herzegovina",
+    "City": "Grad",
+    "AddressName": "Adresa br 1"
+  },
+  {
+    "Id": 5,
+    "Country": "Bosna I Hercegovina",
+    "City": "Konjic",
+    "AddressName": "Adresa 1"
+  }
+]

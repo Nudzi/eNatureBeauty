@@ -1,0 +1,317 @@
+[
+  {
+    "Id": 3,
+    "UserID": 3,
+    "UserTypeID": 1,
+    "ModifiedDate": "2020-11-11T00:00:00",
+    "IsActive": true
+  },
+  {
+    "Id": 4,
+    "UserID": 8,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-01-24T03:08:18.577",
+    "IsActive": true
+  },
+  {
+    "Id": 5,
+    "UserID": 9,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-01-24T22:34:35.560",
+    "IsActive": true
+  },
+  {
+    "Id": 6,
+    "UserID": 11,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-01-25T00:04:57.690",
+    "IsActive": true
+  },
+  {
+    "Id": 7,
+    "UserID": 11,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-01-25T00:04:57.697",
+    "IsActive": true
+  },
+  {
+    "Id": 8,
+    "UserID": 12,
+    "UserTypeID": 3,
+    "ModifiedDate": "2021-01-27T01:05:50.013",
+    "IsActive": true
+  },
+  {
+    "Id": 9,
+    "UserID": 13,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-01-27T01:27:16.730",
+    "IsActive": true
+  },
+  {
+    "Id": 10,
+    "UserID": 14,
+    "UserTypeID": 3,
+    "ModifiedDate": "2021-01-27T01:28:54.787",
+    "IsActive": true
+  },
+  {
+    "Id": 19,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2020-11-11T00:00:00",
+    "IsActive": true
+  },
+  {
+    "Id": 20,
+    "UserID": 16,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T01:24:44.123",
+    "IsActive": true
+  },
+  {
+    "Id": 21,
+    "UserID": 17,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T01:45:01.550",
+    "IsActive": true
+  },
+  {
+    "Id": 22,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:19:00.320",
+    "IsActive": true
+  },
+  {
+    "Id": 23,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:20:04.457",
+    "IsActive": true
+  },
+  {
+    "Id": 24,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:25:55.340",
+    "IsActive": true
+  },
+  {
+    "Id": 25,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:28:22.260",
+    "IsActive": true
+  },
+  {
+    "Id": 26,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:32:19.197",
+    "IsActive": true
+  },
+  {
+    "Id": 27,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:34:01.367",
+    "IsActive": true
+  },
+  {
+    "Id": 28,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:36:27.267",
+    "IsActive": true
+  },
+  {
+    "Id": 29,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:39:59.120",
+    "IsActive": true
+  },
+  {
+    "Id": 30,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:44:41.363",
+    "IsActive": true
+  },
+  {
+    "Id": 31,
+    "UserID": 18,
+    "UserTypeID": 1,
+    "ModifiedDate": "2021-02-06T20:57:58.657",
+    "IsActive": true
+  },
+  {
+    "Id": 32,
+    "UserID": 18,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T20:57:58.663",
+    "IsActive": true
+  },
+  {
+    "Id": 33,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T23:36:29.977",
+    "IsActive": true
+  },
+  {
+    "Id": 34,
+    "UserID": 19,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T23:46:52.890",
+    "IsActive": true
+  },
+  {
+    "Id": 35,
+    "UserID": 20,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T23:49:06.020",
+    "IsActive": true
+  },
+  {
+    "Id": 36,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T23:53:36.360",
+    "IsActive": true
+  },
+  {
+    "Id": 37,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-06T23:55:12.253",
+    "IsActive": true
+  },
+  {
+    "Id": 38,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:01:36.037",
+    "IsActive": true
+  },
+  {
+    "Id": 39,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:04:26.327",
+    "IsActive": true
+  },
+  {
+    "Id": 40,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:05:49.983",
+    "IsActive": true
+  },
+  {
+    "Id": 41,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:08:06.703",
+    "IsActive": true
+  },
+  {
+    "Id": 42,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:10:08.087",
+    "IsActive": true
+  },
+  {
+    "Id": 43,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:12:19.460",
+    "IsActive": true
+  },
+  {
+    "Id": 44,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:14:00.480",
+    "IsActive": true
+  },
+  {
+    "Id": 45,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:14:50.573",
+    "IsActive": true
+  },
+  {
+    "Id": 46,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:18:05.260",
+    "IsActive": true
+  },
+  {
+    "Id": 47,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:18:20.850",
+    "IsActive": true
+  },
+  {
+    "Id": 48,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:18:45.023",
+    "IsActive": true
+  },
+  {
+    "Id": 49,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:22:31.683",
+    "IsActive": true
+  },
+  {
+    "Id": 50,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:23:35.880",
+    "IsActive": true
+  },
+  {
+    "Id": 51,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:23:46.247",
+    "IsActive": true
+  },
+  {
+    "Id": 52,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:25:52.470",
+    "IsActive": true
+  },
+  {
+    "Id": 53,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:26:51.450",
+    "IsActive": true
+  },
+  {
+    "Id": 54,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:27:02.290",
+    "IsActive": true
+  },
+  {
+    "Id": 55,
+    "UserID": 15,
+    "UserTypeID": 2,
+    "ModifiedDate": "2021-02-07T00:37:00.530",
+    "IsActive": true
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Name": "Voda",
+    "Description": "liquid",
+    "UnitID": 1,
+    "Status": false
+  },
+  {
+    "Id": 2,
+    "Name": "Drugi",
+    "Description": null,
+    "UnitID": 2,
+    "Status": false
+  },
+  {
+    "Id": 3,
+    "Name": "Okus",
+    "Description": null,
+    "UnitID": 3,
+    "Status": false
+  }
+]

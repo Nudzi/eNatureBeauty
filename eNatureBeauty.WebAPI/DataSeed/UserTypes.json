@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "Name": "Admin",
+    "Description": "Person that operate backend part"
+  },
+  {
+    "Id": 2,
+    "Name": "User",
+    "Description": null
+  },
+  {
+    "Id": 3,
+    "Name": "Employee",
+    "Description": null
+  }
+]

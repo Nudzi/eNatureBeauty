@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:eNatureBeauty.Mobile.ViewModels"
+             x:Class="eNatureBeauty.Mobile.Views.OrdersDetailPage">
+    <ContentPage.BindingContext>
+        <vm:OrdersDetailPageViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Label Text="Procced order" FontSize="25" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Your information:"></Label>
+            <StackLayout Margin="16" Padding="5">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="UserName: "></Label>
+                    <Label Text="{Binding User.UserName}"></Label>
+                    <Label Text="{Binding User.Id}" IsVisible="false"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="First Name: "></Label>
+                    <Label Text="{Binding User.FirstName}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="Last Name: "></Label>
+                    <Label Text="{Binding User.LastName}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="Telephone: "></Label>
+                    <Label Text="{Binding User.Telephone}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="Email: "></Label>
+                    <Label Text="{Binding User.Email}"></Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="16" Padding="5" HeightRequest="150">
+                <Label Text="Edit shipping address!"></Label>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="State: " WidthRequest="100"></Label>
+                    <Entry Text="{Binding Country}"
+                           WidthRequest="200" ></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="City: " WidthRequest="100"></Label>
+                    <Entry WidthRequest="200" Text="{Binding City}"
+                           ></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label Text="Address: " WidthRequest="100"></Label>
+                    <Entry WidthRequest="200" Text="{Binding AddressName}"
+                           ></Entry>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView>
+            <StackLayout Margin="2" Padding="5">
+                <Label Text="TOTAL:"></Label>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Start">
+                    <Label Text="Total: "></Label>
+                    <Label Text="{Binding TotalNoPDV}"></Label>
+                    <Label Text="Total with discount: "></Label>
+                    <Label Text="{Binding Total}"></Label>
+                    <Label Text="+5KM for POSTAGE"></Label>
+                    <Label Text="Payment on taking over the goods!"></Label>
+                </StackLayout>
+            </StackLayout>
+            </ScrollView>
+            <StackLayout>
+            <Button Margin="20" BackgroundColor="Red" TextColor="White" Text="ORDER" 
+                    Command="{Binding SaveOrderCommand}" 
+                    Clicked="Button_Clicked"></Button>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

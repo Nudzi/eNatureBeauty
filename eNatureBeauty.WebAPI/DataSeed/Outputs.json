@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 3,
+    "ReceiveNumber": "B^HmdO9tY$$QdB1x0i8$",
+    "Date": "2021-01-31T23:43:59.780",
+    "UserID": 12,
+    "Finished": false,
+    "ValueWithoutPDV": 0.00,
+    "ValueWithPDV": 0.00,
+    "OrderID": 3
+  },
+  {
+    "Id": 4,
+    "ReceiveNumber": "ASNRc!AOVMtlCoJPJgxI",
+    "Date": "2021-02-01T00:47:59.123",
+    "UserID": 12,
+    "Finished": false,
+    "ValueWithoutPDV": 30.00,
+    "ValueWithPDV": 24.90,
+    "OrderID": 4
+  },
+  {
+    "Id": 5,
+    "ReceiveNumber": "3LBM=KACH-8!5vK2TXV0",
+    "Date": "2021-02-01T00:50:04.140",
+    "UserID": 12,
+    "Finished": false,
+    "ValueWithoutPDV": 40.00,
+    "ValueWithPDV": 33.20,
+    "OrderID": 5
+  },
+  {
+    "Id": 6,
+    "ReceiveNumber": "$4^lwmdisWjt2F1l$nu",
+    "Date": "2021-02-05T01:49:01.280",
+    "UserID": 3,
+    "Finished": false,
+    "ValueWithoutPDV": 0.00,
+    "ValueWithPDV": 0.00,
+    "OrderID": 6
+  },
+  {
+    "Id": 11,
+    "ReceiveNumber": "@Ki!w0FYXnhJjAi55T&",
+    "Date": "2021-02-05T22:17:45.767",
+    "UserID": 3,
+    "Finished": false,
+    "ValueWithoutPDV": 85.00,
+    "ValueWithPDV": 85.00,
+    "OrderID": 11
+  },
+  {
+    "Id": 12,
+    "ReceiveNumber": "p7mT!gTM&B6lm#oP1cgj",
+    "Date": "2021-02-05T23:13:56.753",
+    "UserID": 12,
+    "Finished": true,
+    "ValueWithoutPDV": 1.00,
+    "ValueWithPDV": 0.83,
+    "OrderID": 12
+  },
+  {
+    "Id": 13,
+    "ReceiveNumber": "-Ham(V6r$r-4LYDhQi0",
+    "Date": "2021-02-06T01:46:50.450",
+    "UserID": 17,
+    "Finished": true,
+    "ValueWithoutPDV": 10.00,
+    "ValueWithPDV": 10.00,
+    "OrderID": 13
+  },
+  {
+    "Id": 16,
+    "ReceiveNumber": "jQ0%vG$TVxK##SSqxme",
+    "Date": "2021-02-06T17:15:29.293",
+    "UserID": 15,
+    "Finished": false,
+    "ValueWithoutPDV": 110.00,
+    "ValueWithPDV": 102.90,
+    "OrderID": 16
+  },
+  {
+    "Id": 17,
+    "ReceiveNumber": "twW^XTCG^llX%Ux0#8o",
+    "Date": "2021-02-06T19:06:52.873",
+    "UserID": 15,
+    "Finished": false,
+    "ValueWithoutPDV": 26.00,
+    "ValueWithPDV": 31.00,
+    "OrderID": 17
+  },
+  {
+    "Id": 18,
+    "ReceiveNumber": "IgVNZLcw@i5O8sYl=NBR",
+    "Date": "2021-02-06T21:51:07.923",
+    "UserID": 12,
+    "Finished": false,
+    "ValueWithoutPDV": 35.00,
+    "ValueWithPDV": 29.05,
+    "OrderID": 18
+  },
+  {
+    "Id": 19,
+    "ReceiveNumber": "&D1y1h60$XiSJ6BWd(m",
+    "Date": "2021-02-06T23:36:58.613",
+    "UserID": 15,
+    "Finished": false,
+    "ValueWithoutPDV": 18.00,
+    "ValueWithPDV": 23.00,
+    "OrderID": 19
+  }
+]

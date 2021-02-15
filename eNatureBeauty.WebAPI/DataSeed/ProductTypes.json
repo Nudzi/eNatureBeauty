@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Cream"
+  },
+  {
+    "Id": 2,
+    "Name": "Soap"
+  },
+  {
+    "Id": 3,
+    "Name": "Shower gel"
+  },
+  {
+    "Id": 4,
+    "Name": "Balsam"
+  },
+  {
+    "Id": 5,
+    "Name": "Oil"
+  },
+  {
+    "Id": 6,
+    "Name": "Milk"
+  }
+]

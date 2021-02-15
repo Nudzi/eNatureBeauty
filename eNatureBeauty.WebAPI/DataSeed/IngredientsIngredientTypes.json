@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "IngredientID": 1,
+    "IngredientTypeID": 1,
+    "Description": null
+  },
+  {
+    "Id": 2,
+    "IngredientID": 2,
+    "IngredientTypeID": 2,
+    "Description": null
+  },
+  {
+    "Id": 3,
+    "IngredientID": 2,
+    "IngredientTypeID": 1,
+    "Description": null
+  },
+  {
+    "Id": 4,
+    "IngredientID": 3,
+    "IngredientTypeID": 1,
+    "Description": null
+  }
+]

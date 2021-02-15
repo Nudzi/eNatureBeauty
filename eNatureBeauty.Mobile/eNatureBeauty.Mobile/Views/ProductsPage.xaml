@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:eNatureBeauty.Mobile.ViewModels;assembly=eNatureBeauty.Mobile" xmlns:converters="clr-namespace:eNatureBeauty.Mobile.Converters"
+             x:Class="eNatureBeauty.Mobile.Views.ProductsPage"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:ProductsViewModel></vm:ProductsViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="5" Padding="0,0,3,0" StyleClass="BodyStyle">
+            <Label Text="Products"
+                FontSize="25"
+                VerticalTextAlignment="Center" 
+                HorizontalTextAlignment="Center"
+                   Margin="10" Padding="10" />
+            <StackLayout Orientation="Vertical">
+                <StackLayout Margin="10" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                <Label Text="Welcome "></Label>
+                    <Label Text="{Binding User.UserName}"></Label>
+                    <Label Text="{Binding User.Id}" IsVisible="false"></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"   HorizontalOptions="CenterAndExpand">
+                <StackLayout WidthRequest="300">
+            <Label Text="Choose product type to filter products:"></Label>
+            <Picker ItemsSource="{Binding ProductTypesList}" SelectedItem="{Binding SelectedProductTypes}" ItemDisplayBinding="{Binding Name}"></Picker>
+                </StackLayout>
+                <StackLayout WidthRequest="300">
+                    <Label Text="Search to filter products:"></Label>
+            <SearchBar Placeholder="Enter product name..." 
+                       x:Name="searchBar"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+            </StackLayout>
+            </StackLayout>
+            
+            <ListView ItemsSource="{Binding ProductsList}" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Vertical">
+                                <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                                    <Image WidthRequest="200" HeightRequest="100" Source="{Binding Image, Converter={StaticResource imgConv}}"></Image>
+                                </StackLayout>
+                                <StackLayout Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                                
+                                <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                    <Label Text="Product Name:  " FontSize="16"></Label>
+                                <Label Text="{Binding Name}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                </StackLayout>
+                                <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                    <Label Text="Product Code:  " FontSize="16"></Label>
+                                <Label Text="{Binding Code}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                </StackLayout>
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Product Price:  " FontSize="16"></Label>
+                                        <Label Text="{Binding Price}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

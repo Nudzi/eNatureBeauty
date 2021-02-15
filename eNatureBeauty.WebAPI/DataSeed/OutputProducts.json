@@ -1,0 +1,106 @@
+[
+  {
+    "Id": 6,
+    "OutputID": 3,
+    "ProductID": 9,
+    "Quantity": 3,
+    "Price": 30.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 7,
+    "OutputID": 3,
+    "ProductID": 4,
+    "Quantity": 4,
+    "Price": 20.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 8,
+    "OutputID": 4,
+    "ProductID": 8,
+    "Quantity": 6,
+    "Price": 30.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 9,
+    "OutputID": 5,
+    "ProductID": 9,
+    "Quantity": 4,
+    "Price": 40.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 10,
+    "OutputID": 6,
+    "ProductID": 4,
+    "Quantity": 1,
+    "Price": 1.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 17,
+    "OutputID": 11,
+    "ProductID": 9,
+    "Quantity": 8,
+    "Price": 10.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 18,
+    "OutputID": 12,
+    "ProductID": 4,
+    "Quantity": 1,
+    "Price": 1.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 19,
+    "OutputID": 13,
+    "ProductID": 8,
+    "Quantity": 1,
+    "Price": 5.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 23,
+    "OutputID": 16,
+    "ProductID": 8,
+    "Quantity": 22,
+    "Price": 5.00,
+    "Discount": 11.00
+  },
+  {
+    "Id": 24,
+    "OutputID": 17,
+    "ProductID": 8,
+    "Quantity": 3,
+    "Price": 5.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 25,
+    "OutputID": 17,
+    "ProductID": 4,
+    "Quantity": 11,
+    "Price": 1.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 26,
+    "OutputID": 18,
+    "ProductID": 5,
+    "Quantity": 5,
+    "Price": 35.00,
+    "Discount": 0.00
+  },
+  {
+    "Id": 27,
+    "OutputID": 19,
+    "ProductID": 4,
+    "Quantity": 9,
+    "Price": 2.00,
+    "Discount": 0.00
+  }
+]

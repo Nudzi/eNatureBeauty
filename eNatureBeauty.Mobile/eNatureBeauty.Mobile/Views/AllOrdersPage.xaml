@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:eNatureBeauty.Mobile.ViewModels"
+             x:Class="eNatureBeauty.Mobile.Views.AllOrdersPage">
+    <ContentPage.BindingContext>
+        <vm:AllOrdersViewModel></vm:AllOrdersViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="5" Padding="0,0,3,0" StyleClass="BodyStyle">
+            <Label Text="Orders"
+                FontSize="25"
+                   HorizontalTextAlignment="Center"/>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Label Text="Welcome "></Label>
+                    <Label Text="{Binding User.UserName}"></Label>
+                    <Label Text="{Binding User.Id}" IsVisible="false"></Label>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Active orders"></Label>
+            <Label Text="On order click, you will cancel it!"></Label>
+            <ScrollView>
+            <ListView ItemsSource="{Binding outputs}" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Vertical">
+                                <StackLayout Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Receive Number:  " FontSize="16"></Label>
+                                        <Label Text="{Binding ReceiveNumber}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Date:  " FontSize="16"></Label>
+                                        <Label Text="{Binding Date}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout> 
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Total:  " FontSize="16"></Label>
+                                        <Label Text="{Binding ValueWithPdv}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </ScrollView>
+
+
+            <Label Text="Created orders"></Label>
+            <ScrollView>
+                <ListView ItemsSource="{Binding outputsCreated}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Orientation="Vertical">
+                                    <StackLayout Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Receive Number:  " FontSize="16"></Label>
+                                            <Label Text="{Binding ReceiveNumber}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Date:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Date}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Total:  " FontSize="16"></Label>
+                                            <Label Text="{Binding ValueWithPdv}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+
+            <Label Text="Waiting orders"></Label>
+            <ScrollView>
+                <ListView ItemsSource="{Binding outputsWaiting}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Orientation="Vertical">
+                                    <StackLayout Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Receive Number:  " FontSize="16"></Label>
+                                            <Label Text="{Binding ReceiveNumber}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Date:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Date}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Total:  " FontSize="16"></Label>
+                                            <Label Text="{Binding ValueWithPdv}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            
+            
+            <Label Text="Finished orders"></Label>
+            <ScrollView>
+            <ListView ItemsSource="{Binding outputsOld}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Vertical">
+                                <StackLayout Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Receive Number:  " FontSize="16"></Label>
+                                        <Label Text="{Binding ReceiveNumber}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Date:  " FontSize="16"></Label>
+                                        <Label Text="{Binding Date}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                        <Label Text="Total:  " FontSize="16"></Label>
+                                        <Label Text="{Binding ValueWithPdv}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+    </ContentPage>

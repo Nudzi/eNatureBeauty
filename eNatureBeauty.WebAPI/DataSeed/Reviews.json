@@ -1,0 +1,471 @@
+[
+  {
+    "Id": 1,
+    "ProductID": 4,
+    "UserID": 1,
+    "Review": 2,
+    "Description": "Interesting"
+  },
+  {
+    "Id": 2,
+    "ProductID": 4,
+    "UserID": 1,
+    "Review": 4,
+    "Description": "Nice"
+  },
+  {
+    "Id": 3,
+    "ProductID": 4,
+    "UserID": 1,
+    "Review": 5,
+    "Description": "Beautiful"
+  },
+  {
+    "Id": 7,
+    "ProductID": 4,
+    "UserID": 3,
+    "Review": 1,
+    "Description": "Masno"
+  },
+  {
+    "Id": 12,
+    "ProductID": 9,
+    "UserID": 3,
+    "Review": 2,
+    "Description": "Nice for body"
+  },
+  {
+    "Id": 15,
+    "ProductID": 5,
+    "UserID": 3,
+    "Review": 0,
+    "Description": "lnl"
+  },
+  {
+    "Id": 17,
+    "ProductID": 6,
+    "UserID": 3,
+    "Review": 0,
+    "Description": "Uzas za lice"
+  },
+  {
+    "Id": 18,
+    "ProductID": 11,
+    "UserID": 16,
+    "Review": 3,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 19,
+    "ProductID": 4,
+    "UserID": 3,
+    "Review": 3,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 20,
+    "ProductID": 6,
+    "UserID": 3,
+    "Review": 1,
+    "Description": "Moze proci"
+  },
+  {
+    "Id": 21,
+    "ProductID": 8,
+    "UserID": 3,
+    "Review": 4,
+    "Description": "Okej je, njezan"
+  },
+  {
+    "Id": 23,
+    "ProductID": 9,
+    "UserID": 3,
+    "Review": 5,
+    "Description": "ODLICAN"
+  },
+  {
+    "Id": 24,
+    "ProductID": 9,
+    "UserID": 3,
+    "Review": 5,
+    "Description": "5+ !!!"
+  },
+  {
+    "Id": 25,
+    "ProductID": 10,
+    "UserID": 3,
+    "Review": 3,
+    "Description": "Okej je. Mnogo je masan"
+  },
+  {
+    "Id": 26,
+    "ProductID": 12,
+    "UserID": 3,
+    "Review": 3,
+    "Description": "Lijepo mirise"
+  },
+  {
+    "Id": 27,
+    "ProductID": 12,
+    "UserID": 3,
+    "Review": 4,
+    "Description": "Odlican mirisss"
+  },
+  {
+    "Id": 28,
+    "ProductID": 13,
+    "UserID": 3,
+    "Review": 4,
+    "Description": "WOW"
+  },
+  {
+    "Id": 29,
+    "ProductID": 13,
+    "UserID": 3,
+    "Review": 5,
+    "Description": "Lice, savrseno navecer"
+  },
+  {
+    "Id": 30,
+    "ProductID": 5,
+    "UserID": 3,
+    "Review": 3,
+    "Description": "Okej je, ali eto nisata za preporuciti"
+  },
+  {
+    "Id": 31,
+    "ProductID": 14,
+    "UserID": 3,
+    "Review": 3,
+    "Description": "Niceee"
+  },
+  {
+    "Id": 32,
+    "ProductID": 12,
+    "UserID": 3,
+    "Review": 5,
+    "Description": "Vas najbolji poizvod!!!"
+  },
+  {
+    "Id": 33,
+    "ProductID": 6,
+    "UserID": 15,
+    "Review": 2,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 34,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "Dobar za noc"
+  },
+  {
+    "Id": 35,
+    "ProductID": 9,
+    "UserID": 15,
+    "Review": 5,
+    "Description": "Njezno tijelo"
+  },
+  {
+    "Id": 36,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 5,
+    "Description": "Njaolji proizvod!!"
+  },
+  {
+    "Id": 39,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 3,
+    "Description": ""
+  },
+  {
+    "Id": 40,
+    "ProductID": 5,
+    "UserID": 15,
+    "Review": 2,
+    "Description": ""
+  },
+  {
+    "Id": 41,
+    "ProductID": 14,
+    "UserID": 15,
+    "Review": 5,
+    "Description": ""
+  },
+  {
+    "Id": 42,
+    "ProductID": 7,
+    "UserID": 15,
+    "Review": 5,
+    "Description": ""
+  },
+  {
+    "Id": 43,
+    "ProductID": 7,
+    "UserID": 15,
+    "Review": 2,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 44,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 45,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 2,
+    "Description": ""
+  },
+  {
+    "Id": 46,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 47,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 1,
+    "Description": ""
+  },
+  {
+    "Id": 48,
+    "ProductID": 7,
+    "UserID": 15,
+    "Review": 1,
+    "Description": ""
+  },
+  {
+    "Id": 49,
+    "ProductID": 14,
+    "UserID": 15,
+    "Review": 2,
+    "Description": ""
+  },
+  {
+    "Id": 50,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 51,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 52,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 5,
+    "Description": ""
+  },
+  {
+    "Id": 53,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 54,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 55,
+    "ProductID": 6,
+    "UserID": 15,
+    "Review": 2,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 56,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "Dobar za noc"
+  },
+  {
+    "Id": 57,
+    "ProductID": 9,
+    "UserID": 15,
+    "Review": 5,
+    "Description": "Njezno tijelo"
+  },
+  {
+    "Id": 58,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 5,
+    "Description": "Njaolji proizvod!!"
+  },
+  {
+    "Id": 59,
+    "ProductID": 4,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "OK"
+  },
+  {
+    "Id": 60,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 61,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 3,
+    "Description": ""
+  },
+  {
+    "Id": 62,
+    "ProductID": 5,
+    "UserID": 15,
+    "Review": 2,
+    "Description": ""
+  },
+  {
+    "Id": 63,
+    "ProductID": 14,
+    "UserID": 15,
+    "Review": 5,
+    "Description": ""
+  },
+  {
+    "Id": 64,
+    "ProductID": 7,
+    "UserID": 15,
+    "Review": 5,
+    "Description": ""
+  },
+  {
+    "Id": 65,
+    "ProductID": 7,
+    "UserID": 15,
+    "Review": 2,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 66,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 67,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 2,
+    "Description": ""
+  },
+  {
+    "Id": 68,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 70,
+    "ProductID": 7,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 71,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 5,
+    "Description": ""
+  },
+  {
+    "Id": 72,
+    "ProductID": 11,
+    "UserID": 15,
+    "Review": 3,
+    "Description": ""
+  },
+  {
+    "Id": 73,
+    "ProductID": 12,
+    "UserID": 15,
+    "Review": 3,
+    "Description": ""
+  },
+  {
+    "Id": 74,
+    "ProductID": 10,
+    "UserID": 15,
+    "Review": 4,
+    "Description": ""
+  },
+  {
+    "Id": 75,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "Okej je"
+  },
+  {
+    "Id": 76,
+    "ProductID": 4,
+    "UserID": 15,
+    "Review": 2,
+    "Description": "Ne mirise"
+  },
+  {
+    "Id": 77,
+    "ProductID": 8,
+    "UserID": 15,
+    "Review": 5,
+    "Description": "Nije lose"
+  },
+  {
+    "Id": 78,
+    "ProductID": 13,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "Nikada ga nema na stanju !!"
+  },
+  {
+    "Id": 79,
+    "ProductID": 6,
+    "UserID": 15,
+    "Review": 3,
+    "Description": ""
+  },
+  {
+    "Id": 80,
+    "ProductID": 16,
+    "UserID": 15,
+    "Review": 5,
+    "Description": "Super stvar!"
+  },
+  {
+    "Id": 81,
+    "ProductID": 4,
+    "UserID": 15,
+    "Review": 3,
+    "Description": "Moze proci, obican gel"
+  }
+]

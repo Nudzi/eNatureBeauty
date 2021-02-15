@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="eNatureBeauty.Mobile.Views.ItemsPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>-->
+    <ScrollView>
+
+        <StackLayout>
+            
+        <StackLayout WidthRequest="400" Background="MistyRose" Margin="10" HorizontalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="WELCOME" FontSize="50"></Label>
+        </StackLayout>
+            
+            <StackLayout>
+                <StackLayout WidthRequest="200" Background="Bisque" Margin="2" HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Uskoro novi proizvodi" FontSize="25"></Label>
+                </StackLayout>
+                <StackLayout Padding="10" WidthRequest="200" Background="Violet" Margin="2" HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Nature Beauty proglašen 
+                       za najbolji Bosansko-Hercegovački brend u 2020. godini" FontSize="25"></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <StackLayout WidthRequest="200" Background="RosyBrown" Margin="2" HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalTextAlignment="Center" Padding="3" Text="Slavimo rođendan 11.03.2021. Pridužite nam se!" FontSize="20"></Label>
+                </StackLayout>
+                <StackLayout WidthRequest="200" Background="LightSalmon" Margin="2" HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Uskoro nova kolaboracija sa vašim omiljenim make-up influenserom!" 
+                           FontSize="20"></Label>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout WidthRequest="400" Background="MistyRose" Margin="10" HorizontalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="NATURE BEAUTY Ⓒ"
+                       FontSize="30"></Label>
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>

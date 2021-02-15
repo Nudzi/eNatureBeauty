@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 2,
+    "IngredientID": 1,
+    "ProductID": 4,
+    "Measure": 2
+  },
+  {
+    "Id": 3,
+    "IngredientID": 2,
+    "ProductID": 4,
+    "Measure": 1
+  }
+]

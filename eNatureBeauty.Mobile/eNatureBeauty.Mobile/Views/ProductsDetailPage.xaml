@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:eNatureBeauty.Mobile.ViewModels" xmlns:converters="clr-namespace:eNatureBeauty.Mobile.Converters"
+             x:Class="eNatureBeauty.Mobile.Views.ProductsDetailPage">
+        <ContentPage.BindingContext>
+            <vm:ProductsDetailViewModel></vm:ProductsDetailViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
+    <ContentPage.Content>
+            <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10">
+            <Label Text="Products Detail Page for product" FontSize="15"></Label>
+                <Label Text="{Binding Product.Name}" FontSize="15"></Label>
+                </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Margin="2" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Label Text="Welcome "></Label>
+                    <Label Text="{Binding User.UserName}"></Label>
+                    <Label Text="{Binding User.Id}" IsVisible="false"></Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand">
+                    <Label Text="Add to wishlist"></Label>
+                    <Switch IsToggled="{Binding IsToggled}" Toggled="Switch_Toggled"/>
+                </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                    <Image WidthRequest="200" HeightRequest="70" Source="{Binding Product.Image, Converter={StaticResource imgConv}}"></Image>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Name:"></Label>
+                    <Label Text="{Binding Product.Name}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Code:"></Label>
+                    <Label Text="{Binding Product.Code}"></Label>
+                </StackLayout>
+                    <ScrollView>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Description:"></Label>
+                        <Label Text="{Binding Product.Description}"></Label>
+                    </StackLayout>
+                    </ScrollView>
+                    <StackLayout Orientation="Horizontal">
+                    <Label Text="Price:"></Label>
+                    <Label Text="{Binding Product.Price}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Entry Text="{Binding Quantity}" Keyboard="Numeric" ></Entry>
+                    <Button Text="+1" Command="{Binding AddQuantityCommand}"></Button>
+                </StackLayout>
+                <StackLayout>
+                <Button Command="{Binding OrderCommand}" IsEnabled="{Binding IsAvailable}" Text="Add to cart"></Button>                
+                </StackLayout>
+            </StackLayout>
+                
+            <StackLayout Orientation="Vertical">
+                    <Label Text="Leave your review"></Label>
+                    <Slider Minimum="0" Maximum="5" Value="{Binding Review}" />
+                    <Entry Placeholder="Enter your comment here..." Text="{Binding Description}"></Entry>
+                    <Button Text="Add review" Command="{Binding AddReviewCommand}"></Button>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <!--comments-->
+                <StackLayout Orientation="Vertical">
+                <StackLayout >
+                    <Label Padding="4" Text="Your comments and reviews (* click on one of your comments to delete it *)"></Label>
+                    <ListView ItemsSource="{Binding ReviewsListUser}" ItemSelected="ListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical" BackgroundColor="Lavender">
+                                    <StackLayout Margin="2" Padding="5" Orientation="Vertical" VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand">
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Comment:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Description}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Review:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Review}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                            <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                                <!--<Button Text="Delete" Command="{Binding DeleteReviewCommand}"></Button>-->
+                                            </StackLayout>
+                                        </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </StackLayout>
+
+                <Label Padding="4" Text="Comments and reviews:"></Label>
+                <ListView ItemsSource="{Binding ReviewsList}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Margin="2" Padding="5" Orientation="Vertical" VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand">
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Comment:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Description}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Review:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Review}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <!--recommednation-->
+                <ScrollView>
+
+                    <StackLayout>
+                        <Label Text="Recommended product for you, based on your experience!"></Label>
+                        <Label IsVisible="{Binding IsBusy}" Text="No recommendations for now!"></Label>
+                        <ListView ItemsSource="{Binding RecommenderList}" ItemSelected="ListView_ItemSelected_1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Orientation="Vertical">
+                                    <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                                        <Image WidthRequest="200" HeightRequest="100" Source="{Binding Image, Converter={StaticResource imgConv}}"></Image>
+                                    </StackLayout>
+                                    <StackLayout Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Product Name:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Name}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Product Code:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Code}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="0">
+                                            <Label Text="Product Price:  " FontSize="16"></Label>
+                                            <Label Text="{Binding Price}"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="16"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+        <!--</Grid>-->
+    </ContentPage.Content>
+</ContentPage>
