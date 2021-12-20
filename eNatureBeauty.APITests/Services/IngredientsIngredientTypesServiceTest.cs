@@ -138,10 +138,10 @@ namespace eNatureBeauty.Test.Services
             };
             _context.IngredientsIngredientTypes.Add(new IngredientsIngredientTypes
             {
-                Id = 6,
+                Id = 66,
                 Description = "",
-                IngredientId = 6,
-                IngredientTypeId = 6
+                IngredientId = 66,
+                IngredientTypeId = 66
             });
             _context.SaveChanges();
             _ingredientsIngredientTypesService = new IngredientsIngredientTypesService(_context, _mapper);
