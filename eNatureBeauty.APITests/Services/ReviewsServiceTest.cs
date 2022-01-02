@@ -26,7 +26,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -34,7 +34,7 @@ namespace eNatureBeauty.Test.Services
             _reviewsService = new ReviewsService(_context, _mapper);
         }
         [Fact]
-        public void GetReviewByProductIdReturnObject()
+        public void GetReviewByProductId_ReturnObject()
         {
             ReviewsSearchRequest request = new ReviewsSearchRequest
             {
@@ -69,7 +69,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void GetReviewByUserIdReturnObject()
+        public void GetReviewByUserId_ReturnObject()
         {
             ReviewsSearchRequest request = new ReviewsSearchRequest
             {
@@ -104,7 +104,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void DeleteByIdSucessfullyReturnObject()
+        public void DeleteByIdSucessfully_ReturnObject()
         {
             _context.Reviews.Add(
                  new Reviews
@@ -124,13 +124,13 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(oldList - 1, _context.Reviews.Local.Count);
         }
         [Fact]
-        public void DeleteByIdReturnNullException()
+        public void DeleteById_ReturnNullException()
         {
             // Assert
             Assert.Throws<ArgumentNullException>(() => _reviewsService.Delete(100));
         }
         [Fact]
-        public void GetByIdSuccessfullyReturnObject()
+        public void GetByIdSuccessfully_ReturnObject()
         {
             _context.Reviews.Add(
                  new Reviews
@@ -152,7 +152,7 @@ namespace eNatureBeauty.Test.Services
             Assert.NotNull(item);
         }
         [Fact]
-        public void GetByIdReturnNotFound()
+        public void GetById_ReturnNotFound()
         {
             // Act
             var item = _reviewsService.GetById(100);
@@ -160,7 +160,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Null(item);
         }
         [Fact]
-        public void InsertItemSuccessfullyReturnObject()
+        public void InsertItemSuccessfully_ReturnObject()
         {
             var request = new ReviewsUpsertRequest
             {
@@ -178,7 +178,7 @@ namespace eNatureBeauty.Test.Services
         }
 
         [Fact]
-        public void UpdateItemSuccessfullyReturnObject()
+        public void UpdateItemSuccessfully_ReturnObject()
         {
             _context.Reviews.Add(
                  new Reviews

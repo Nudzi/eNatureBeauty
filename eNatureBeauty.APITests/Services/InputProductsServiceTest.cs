@@ -24,7 +24,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -33,7 +33,7 @@ namespace eNatureBeauty.Test.Services
         }
 
         [Fact]
-        public void FilterByProductIdReturnObject()
+        public void FilterByProductId_ReturnObject()
         {
             _context.InputProducts.Add(new InputProducts
             {
@@ -62,7 +62,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void FilterByInputIdReturnObject()
+        public void FilterByInputId_ReturnObject()
         {
             _context.InputProducts.Add(new InputProducts
             {
@@ -91,7 +91,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void FilterEmptyReturnWholeList()
+        public void FilterEmpty_ReturnWholeList()
         {
             _context.InputProducts.Add(new InputProducts
             {
@@ -110,7 +110,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(list.Count, _context.InputProducts.Local.Count);
         }
         [Fact]
-        public void FilterByProductIdAndInputIdReturnEmpty()
+        public void FilterByProductIdAndInputId_ReturnEmpty()
         {
             _context.InputProducts.Add(new InputProducts
             {
@@ -133,7 +133,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Empty(list);
         }
         [Fact]
-        public void FilterByInputIdAndProductIdReturnObject()
+        public void FilterByInputIdAndProductId_ReturnObject()
         {
             _context.InputProducts.Add(new InputProducts
             {

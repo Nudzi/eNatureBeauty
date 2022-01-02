@@ -26,7 +26,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -35,7 +35,7 @@ namespace eNatureBeauty.Test.Services
         }
 
         [Fact]
-        public void FilterByProductIdReturnObject()
+        public void FilterByProductId_ReturnObject()
         {
             _context.UserTypes.Add(new UserTypes
             {
@@ -59,7 +59,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(list.Count, _context.UserTypes.Local.Count);
         }
         [Fact]
-        public void GetByIdSuccessfullyReturnObject()
+        public void GetByIdSuccessfully_ReturnObject()
         {
             _context.UserTypes.Add(new UserTypes
             {
@@ -76,7 +76,7 @@ namespace eNatureBeauty.Test.Services
             Assert.NotNull(item);
         }
         [Fact]
-        public void GetByIdReturnNullObject()
+        public void GetById_ReturnNullObject()
         {
             // Act
             var item = _userTypesService.GetById(100);
@@ -84,7 +84,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Null(item);
         }
         [Fact]
-        public void IsAdminSuccessfullyReturnObject()
+        public void IsAdminSuccessfully_ReturnObject()
         {
             _context.UserTypes.Add(new UserTypes
             {
@@ -101,7 +101,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal("Admin", item.Name);
         }
         [Fact]
-        public void IsAdminFailsReturnNullObject()
+        public void IsAdminFails_ReturnNullObject()
         {
             _context.UserTypes.Add(new UserTypes
             {

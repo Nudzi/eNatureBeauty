@@ -26,7 +26,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -34,7 +34,7 @@ namespace eNatureBeauty.Test.Services
             _ingredientsService = new IngredientsService(_context, _mapper);
         }
         [Fact]
-        public void GetByIngredientNameReturnObject()
+        public void GetByIngredientName_ReturnObject()
         {
             IngredientsSearchRequest request = new IngredientsSearchRequest
             {
@@ -63,7 +63,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void GetByIngredientNameReturnEmpty()
+        public void GetByIngredientName_ReturnEmpty()
         {
             IngredientsSearchRequest request = new IngredientsSearchRequest
             {
@@ -85,7 +85,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Empty(list);
         }
         [Fact]
-        public void DeleteByIdSucessfullyReturnObject()
+        public void DeleteByIdSucessfully_ReturnObject()
         {
             _context.Ingredients.Add(new Ingredients
             {
@@ -102,13 +102,13 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(oldList - 1, _context.Ingredients.Local.Count);
         }
         [Fact]
-        public void DeleteByIdReturnNullException()
+        public void DeleteById_ReturnNullException()
         {
             // Assert
             Assert.Throws<ArgumentNullException>(() => _ingredientsService.Delete(100));
         }
         [Fact]
-        public void GetByIdSucessfullyReturnObject()
+        public void GetByIdSucessfully_ReturnObject()
         {
             _context.Ingredients.Add(new Ingredients
             {
@@ -126,7 +126,7 @@ namespace eNatureBeauty.Test.Services
             Assert.NotNull(item);
         }
         [Fact]
-        public void GetByIdReturnNullObject()
+        public void GetById_ReturnNullObject()
         {
             // Act
             var item = _ingredientsService.GetById(100);
@@ -134,7 +134,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Null(item);
         }
         [Fact]
-        public void InsertItemSuccessfullyReturnObject()
+        public void InsertItemSuccessfully_ReturnObject()
         {
             var request = new IngredientsUpsertRequest
             {
@@ -150,7 +150,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(oldList + 1, _context.Ingredients.Local.Count);
         }
         [Fact]
-        public void InsertItemSuccessfullyWithTypesReturnObject()
+        public void InsertItemSuccessfullyWithTypes_ReturnObject()
         {
             var request = new IngredientsUpsertRequest
             {
@@ -169,7 +169,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(oldListTypes + 1, _context.IngredientsIngredientTypes.Local.Count);
         }
         [Fact]
-        public void UpdateItemSuccessfullyReturnObject()
+        public void UpdateItemSuccessfully_ReturnObject()
         {
             _context.Ingredients.Add(new Ingredients
             {

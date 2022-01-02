@@ -25,7 +25,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -34,7 +34,7 @@ namespace eNatureBeauty.Test.Services
         }
 
         [Fact]
-        public void FilterByUserIdReturnObject()
+        public void FilterByUserId_ReturnObject()
         {
             _context.Orders.Add(new Orders
             {
@@ -65,7 +65,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void FilterByOrderNumberReturnObject()
+        public void FilterByOrderNumber_ReturnObject()
         {
             _context.Orders.Add(new Orders
             {
@@ -96,7 +96,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(list);
         }
         [Fact]
-        public void FilterEmptyReturnWholeList()
+        public void FilterEmpty_ReturnWholeList()
         {
             _context.Orders.Add(new Orders
             {
@@ -116,7 +116,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(list.Count, _context.Orders.Local.Count);
         }
         [Fact]
-        public void FilterByUserIdAndOrderNumberReturnEmpty()
+        public void FilterByUserIdAndOrderNumber_ReturnEmpty()
         {
             _context.Orders.Add(new Orders
             {
@@ -140,7 +140,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Empty(list);
         }
         [Fact]
-        public void FilterByUserIdAndOrderNumberReturnObject()
+        public void FilterByUserIdAndOrderNumber_ReturnObject()
         {
             _context.Orders.Add(new Orders
             {

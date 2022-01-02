@@ -26,7 +26,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -35,7 +35,7 @@ namespace eNatureBeauty.Test.Services
         }
 
         [Fact]
-        public void FilterUserByFirstNameReturnObject()
+        public void FilterUserByFirstName_ReturnObject()
         {
             _context.Users.Add(new Users
             {
@@ -78,13 +78,13 @@ namespace eNatureBeauty.Test.Services
         }
 
         [Fact]
-        public void FilterUserByLastNameReturnObject()
+        public void FilterUserByLastName_ReturnObject()
         {
             _context.Users.Add(new Users
             {
                 Id = 3,
                 FirstName = "",
-                LastName = "Prezime3",
+                LastName = "PrezimeTest",
                 UserAddressId = 1,
                 Email = "",
                 Telephone = "",
@@ -96,7 +96,7 @@ namespace eNatureBeauty.Test.Services
             _usersService = new UsersService(_context, _mapper);
             UsersSearchRequest request = new UsersSearchRequest
             {
-                LastName = "Prezime3"
+                LastName = "PrezimeTest"
             };
 
             // Act
@@ -106,7 +106,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(listUsers);
         }
         [Fact]
-        public void UserRequestIsEmptyReturnWholeList()
+        public void UserRequestIsEmpty_ReturnWholeList()
         {
             _usersService = new UsersService(_context, _mapper);
             UsersSearchRequest request = new UsersSearchRequest();
@@ -135,7 +135,7 @@ namespace eNatureBeauty.Test.Services
         }
         //[Trait("Users List Tests1", "GetById")]
         [Fact]
-        public void GetUserByIdSucessfullyReturnObject()
+        public void GetUserByIdSucessfully_ReturnObject()
         {
             _context.Users.Add(new Users
             {
@@ -158,7 +158,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(23, user.Id);
         }
         [Fact]
-        public void GetUserByIdReturnNotFound()
+        public void GetUserById_ReturnNotFound()
         {
             // Act
             var user = _usersService.GetById(100);
@@ -166,7 +166,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Null(user);
         }
         [Fact]
-        public void InsertButReturnPasswordsDontMatch()
+        public void InsertBut_ReturnPasswordsDontMatch()
         {
             var request = new UsersInsertRequest()
             {
@@ -182,7 +182,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Throws<UserException>(() => _usersService.Insert(request));
         }
         [Fact]
-        public void InsertUserSucessfullyReturnObject()
+        public void InsertUserSucessfully_ReturnObject()
         {
             var request = new UsersInsertRequest()
             {
@@ -201,7 +201,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Equal(oldListCount + 1, _context.Users.Local.Count);
         }
         [Fact]
-        public void InsertUserSucessfullyReturnWithUserType()
+        public void InsertUserSucessfully_ReturnWithUserType()
         {
             var userTypes = new List<int>() { 1 };
             var request = new UsersInsertRequest()
@@ -223,7 +223,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Single(_context.UsersUserTypes.Local);
         }
         [Fact]
-        public void UpdateButReturnPasswordsDontMatch()
+        public void UpdateBut_ReturnPasswordsDontMatch()
         {
             var request = new UsersInsertRequest()
             {
@@ -239,7 +239,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Throws<Exception>(() => _usersService.Update(1, request));
         }
         [Fact]
-        public void UpdateButReturnUserNull() //I found error on NULL user
+        public void UpdateBut_ReturnUserNull() //I found error on NULL user
         {
             var request = new UsersInsertRequest()
             {
@@ -255,7 +255,7 @@ namespace eNatureBeauty.Test.Services
             Assert.Throws<NullReferenceException>(() => _usersService.Update(100, request));
         }
         [Fact]
-        public void UpdateFirstNameSuccessfullyReturnObject()
+        public void UpdateFirstNameSuccessfully_ReturnObject()
         {
             _context.Users.Add(new Users
             {

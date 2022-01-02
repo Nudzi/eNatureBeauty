@@ -26,7 +26,7 @@ namespace eNatureBeauty.Test.Services
                 IMapper mapper = mappingConfig.CreateMapper();
                 _mapper = mapper;
             }
-            // Insert seed data into the database using one instance of the context
+            
             var options = new DbContextOptionsBuilder<natureBeautyContext>()
             .UseInMemoryDatabase(databaseName: "eNatureBeauty").Options;
 
@@ -34,7 +34,7 @@ namespace eNatureBeauty.Test.Services
             _recommenderService = new RecommenderService(_context, _mapper);
         }
         [Fact]
-        public void GetAlikeProductsWithReturnObject()
+        public void GetAlikeProductsWith_ReturnObject()
         {
             var outputProduct = new OutputProducts
             {
@@ -114,7 +114,7 @@ namespace eNatureBeauty.Test.Services
             Assert.IsType<List<Model.Products>>(list);
         }
         [Fact]
-        public void GetAlikeProductsWithReturnNullBecauseOfTheLowReviews()
+        public void GetAlikeProductsWith_ReturnNullBecauseOfTheLowReviews()
         {
             var outputProduct = new OutputProducts
             {
